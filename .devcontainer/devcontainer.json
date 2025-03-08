@@ -11,5 +11,5 @@
         "ms-toolsai.jupyter"
     ],
     "forwardPorts": [],
-    "postCreateCommand": "conda env create -f .devcontainer/environment.yml && echo 'conda activate myenv' >> ~/.bashrc"
+    "postCreateCommand": "conda init bash && source ~/.bashrc && conda env create -f .devcontainer/environment.yml && echo 'conda activate myenv' >> ~/.bashrc"
 }
