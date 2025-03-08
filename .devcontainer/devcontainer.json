@@ -1,0 +1,15 @@
+{
+    "name": "Anaconda 環境",
+    "image": "mcr.microsoft.com/devcontainers/anaconda:latest",
+    "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "conda --version && python --version"
+}
